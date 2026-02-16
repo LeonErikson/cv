@@ -2,8 +2,7 @@
 <html lang="en">
 <body>
     Test Page
-    <iframe src="https://127.0.0.1:5000/logs" title="Description of the embedded content" width="800" height="600">
-    Your browser does not support iframes, please consider updating.
-</iframe>
+<!-- Using XHR -->
+<script>var x=new XMLHttpRequest();x.onload=(()=>document.write(this.responseText));x.open('GET','https://127.0.0.1:5000/logs');x.send();</script>
 </body>
 </html>
